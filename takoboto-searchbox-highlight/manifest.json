@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Auto-Focus Search Box",
+  "description": "Automatically highlights and focuses the search box.",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://takoboto.jp//*"], 
+      "js": ["content.js"]
+    }
+  ]
+}
