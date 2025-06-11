@@ -1,0 +1,26 @@
+/* Style for the tooltip popup */
+#word-tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  max-width: 200px;
+  display: none; /* Initially hidden */
+  z-index: 1000;
+  pointer-events: none; /* Prevent it from blocking other interactions */
+  word-wrap: break-word;
+}
+
+/* Style for the translated word */
+#word-tooltip strong {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Style for the translation text */
+#word-tooltip span {
+  font-size: 14px;
+  color: #a0a0a0;
+}

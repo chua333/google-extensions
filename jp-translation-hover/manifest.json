@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Hover Word Tooltip with Translation",
+  "description": "Shows a tooltip with the hovered word and its Japanese translation.",
+  "version": "1.0",
+  "permissions": ["activeTab", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "host_permissions": [
+    "https://translation.googleapis.com/*"
+  ]
+}
