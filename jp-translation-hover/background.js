@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyBLYS_ftzGKoOAX7cuXw-QBl3_Ky_thPN4";  // replace with your API key
+const API_KEY = "replace-with-your-api-key-here";
 const API_URL = "https://translation.googleapis.com/language/translate/v2";
 
 // Function to get the Japanese translation
